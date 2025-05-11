@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Geri Butonu -->
+        <!-- Ürün Resmi -->
+        <ImageView
+            android:id="@+id/imageProductDetail"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/buttonBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:contentDescription="Geri"
+            />
+
+        <!-- Favori Butonu -->
+        <ImageButton
+            android:id="@+id/buttonFavorite"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_favorite_border"
+            android:contentDescription="Favorilere ekle"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- SOLDAKİ BİLGİLER -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textProductName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Espresso Coffee"
+                        android:fontFamily="@font/gb"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp" />
+
+                    <TextView
+                        android:id="@+id/textProductSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="with Chocolate"
+                        android:fontFamily="@font/gm"
+                        android:textColor="#666"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- SAĞDAKİ PUAN -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rating"
+                        app:tint="#FFA000" />
+
+                    <TextView
+                        android:id="@+id/textProductRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5 (2,330)"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/gm"
+                        android:layout_marginStart="6dp"
+
+                        android:textColor="#000" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!-- Açıklama -->
+            <TextView
+                android:layout_marginStart="20dp"
+
+                android:fontFamily="@font/gm"
+                android:id="@+id/textProductDescriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/gr"
+                android:id="@+id/textProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="#444"
+                android:layout_marginTop="4dp" />
+
+            <!-- Boyut Seçimi -->
+            <TextView
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/gb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/layoutSizeButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <!-- S, M, L butonları koddan eklenecek -->
+            </LinearLayout>
+
+            <!-- Süt Seçimi -->
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/gb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milk"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/layoutMilkButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <!-- Milk seçenekleri koddan eklenecek -->
+            </LinearLayout>
+
+            <!-- Fiyat ve Buton -->
+            <LinearLayout
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textProductPrice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="$ 4.53"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF9800" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonBuyNow"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Now"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_orange_rounded"
+                    android:textAllCaps="false"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

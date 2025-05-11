@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88159523315",
+    "project_id": "scregproject",
+    "storage_bucket": "scregproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88159523315:android:87b4b72aa7c447fd094286",
+        "android_client_info": {
+          "package_name": "com.tudio.scregproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDX_fresa3yFtEiTNzdR6zZtDUk8lFfgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="12dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        android:padding="3dp"
+        app:cardElevation="0dp"
+        android:layout_margin="4dp">
+        <ImageView
+            android:id="@+id/imageCampaignNotification"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textViewNotificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Başlık"
+        android:textSize="19sp"
+        android:fontFamily="@font/gb"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNotificationBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gsb"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:text="İçerik"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

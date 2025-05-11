@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginBottom="8dp">
+
+    <!-- Ürün Resmi -->
+    <ImageView
+        android:id="@+id/imageCartProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/profile_image_bg"
+        android:clipToOutline="true" />
+
+
+    <!-- Bilgiler ve Butonlar -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Ürün Adı -->
+            <TextView
+                android:id="@+id/textViewCartName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün Adı"
+                android:fontFamily="@font/gb"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+            <TextView
+                android:id="@+id/textViewCartNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Ürün Adı"
+                android:fontFamily="@font/gr"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+
+        <!-- Fiyat -->
+        <TextView
+            android:id="@+id/textViewCartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₺ 0.00"
+            android:fontFamily="@font/gb"
+            android:textSize="14sp"
+            android:textColor="#666" />
+
+        <!-- Miktar Butonları -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/buttonMinus"
+                android:layout_width="28dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_remove_24"
+                android:contentDescription="Azalt"
+                app:tint="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:fontFamily="@font/gb"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <ImageButton
+                android:id="@+id/buttonPlus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/plus"
+                android:contentDescription="Artır"
+                app:tint="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sil Butonu -->
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/baseline_restore_from_trash_24"
+        android:contentDescription="Sil"
+        android:background="@android:color/transparent"
+        app:tint="@color/black"
+        android:layout_marginStart="8dp" />
+</LinearLayout>

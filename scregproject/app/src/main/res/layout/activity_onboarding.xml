@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#38241D">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gb"
+        android:textSize="24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"
+        android:text="Kahve molası verme vakti..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/gr"
+        android:text="Günlük kahve dozununu alma zamanı. Üst kalite ürünlerimizle tanışmak için hemen sipariş verin!"
+        android:textColor="#B7FFFFFF"
+        android:textSize="18dp">
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/layoutIndicators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+        android:textColor="@color/white"
+        android:background="@drawable/button_orange_rounded"
+        android:text="Kayıt Ol"
+        android:fontFamily="@font/gb"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"/>
+</LinearLayout>

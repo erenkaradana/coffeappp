@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">scregproject</string>
+    <string-array name="sizes_array">
+        <item>Küçük</item>
+        <item>Orta</item>
+        <item>Büyük</item>
+    </string-array>
+
+    <string-array name="milk_array">
+        <item>Yok</item>
+        <item>Tam Yağlı</item>
+        <item>Yağsız</item>
+        <item>Soya</item>
+        <item>Badem</item>
+    </string-array>
+
+</resources>

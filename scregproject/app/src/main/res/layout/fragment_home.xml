@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/bg_top_gradient"
+                android:scaleType="fitXY"
+                />
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/profileContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="36dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="top"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoşgeldin,"
+                        android:fontFamily="@font/gm"
+                        android:textColor="#B7B7B7"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:id="@+id/textViewUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ad Soyad"
+                        android:fontFamily="@font/gsb"
+                        android:textStyle="bold"
+                        android:textColor="#DDDDDD"
+                        android:textSize="22sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ppclus"
+                    android:background="@drawable/profile_image_bg"
+                    android:padding="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="130dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/search_edittext_bg"
+                android:elevation="4dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/search_normal"
+                    android:layout_marginStart="12dp"
+                    app:tint="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Kahve ara"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:paddingStart="12dp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <!-- Kategori listesi -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:id="@+id/recyclerViewCategories"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <!-- Ürün listesi -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/recyclerViewProducts"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</FrameLayout>
